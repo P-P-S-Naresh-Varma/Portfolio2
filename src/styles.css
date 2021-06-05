@@ -2,6 +2,11 @@ body {
   font-family: sans-serif;
 }
 
+.d-flex {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
 hr {
   color: black;
 }
