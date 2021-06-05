@@ -17,6 +17,7 @@
 <body>
 
 
+
   <!-- Optional JavaScript; choose one of the two! -->
 
   <!-- Option 1: Bootstrap Bundle with Popper -->
@@ -24,118 +25,184 @@
     integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
     </script>
 
- 
-
+<nav id="navbar-example2" class="navbar navbar-light bg-light px-3">
+    <a class="navbar-brand" href="#">Portfolio</a>
+    <ul class="nav nav-pills">
+      <li class="nav-item">
+        <a class="nav-link" href="#scrollspyHeading1">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#scrollspyHeading2">Contact me</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Projects</a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#scrollspyHeading3">Apps</a></li>
+          <li><a class="dropdown-item" href="#scrollspyHeading4">Websites</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="#scrollspyHeading5">Games</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+  <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+    <h4 id="scrollspyHeading1"></h4>
     <div class="p-5 mb-4 bg-light rounded-3">
-      <div class="container-fluid py-5">
-        <div class="container">
-          <div class="row">
-            <div class="col">
-              <h1 class="display-5 fw-bold">Naresh Varma</h1>
-              <p class="col-md-8 fs-4">I am an Indie Dev. I make Apps,Games and Websites</p>
-              <button class="btn btn-primary btn-lg" type="button">Get in Touch</button>
+        <div class="container-fluid py-5">
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <h1 class="display-5 fw-bold">Naresh Varma</h1>
+                <p class="col-md-8 fs-4">I am an Indie Dev. I make Apps,Games and Websites</p>
+                <button class="btn btn-primary btn-lg" type="button">Get in Touch</button>
+              </div>
+              <div class="col">
+                <img src="https://i.pinimg.com/originals/ab/89/af/ab89af2b5b273aca5d56f25d534c412a.jpg" class="img-fluid"
+                  alt="">
+              </div>
             </div>
-            <div class="col">
-              <img src="https://i.pinimg.com/originals/ab/89/af/ab89af2b5b273aca5d56f25d534c412a.jpg" class="img-fluid"
-                alt="">
+  
+          </div>
+        </div>
+      </div>
+  
+    <h4 id="scrollspyHeading2">Second heading</h4>
+   
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" />
+    <div class="d-flex">
+      <hr class="my-auto flex-grow-1">
+      <div class="px-5">
+        <h4>Apps</h4>
+      </div>
+      <hr class="my-auto flex-grow-1">
+    </div>
+
+
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div style="margin: 8px; background: #AD6CEB;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;" class="card">
+            <div class="card-body">
+              <div id="app1" class="container">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h1>BCA learning</h1>
+                  </div>
+
+
+                  <div class="col-sm-4"><img src="assets/bca1.png" class="img-fluid" alt=""></div>
+                </div>
+              </div>
             </div>
           </div>
 
+        </div>
+        <div class="col">
+          <div style="margin: 8px; background: #4EA7D9;
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          border-radius: 15px;" class="card">
+            <div class="card-body">
+              <div class="container">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h1>WallSplash</h1>
+                  </div>
+
+
+                  <div class="col-sm-4">
+                    <img src="assets/wall1.png" class="img-fluid" alt=""></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div style="margin: 8px; background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;" class="card">
+            <div class="card-body">
+              <div id="app1" class="container">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h1>Just News</h1>
+                  </div>
+                  <div class="col-sm-4"><img src="assets/news1.png" class="img-fluid" alt=""></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div style="margin: 8px; background: #FFC700;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;" class="card">
+            <div class="card-body">
+              <div id="app1" class="container">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h1>Meme Templates</h1>
+                  </div>
+
+
+                  <div class="col-sm-4"><img src="assets/M1.png" class="img-fluid" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
+    <h4 id="scrollspyHeading3">Third heading</h4>
 
-
-      <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" />
-      <div class="d-flex">
-        <hr class="my-auto flex-grow-1">
-        <div class="px-5">
-          <h4>Apps</h4>
-        </div>
-        <hr class="my-auto flex-grow-1">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" />
+    <div class="d-flex">
+      <hr class="my-auto flex-grow-1">
+      <div class="px-5">
+        <h4>Websites</h4>
       </div>
+      <hr class="my-auto flex-grow-1">
+    </div>
 
 
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <div style="margin: 8px; background: #AD6CEB;
-      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-      border-radius: 15px;" class="card">
-              <div class="card-body">
-                <div id="app1" class="container">
-                  <div class="row">
-                    <div class="col-sm-8">
-                      <h1>BCA learning</h1>
-                    </div>
+    <div class="container">
+     <div class="row">
+       <div class="col-sm">
+         <div class="card bg-dark text-white">
+           <img class="card-img" src="assets/web1.png" alt="Card image">
+           <div class="card-img-overlay">
+               <button type="button" class="btn btn-outline-primary">Take a look</button>
+
+           </div>
+         </div>
+       </div>
+       <div class="col-sm">
+         <div class="card bg-dark text-white">
+           <img class="card-img" src="assets/web2.png" alt="Card image">
+           <div class="card-img-overlay">
+               <button type="button" class="btn btn-outline-primary">Take a look</button>
+
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+    <h4 id="scrollspyHeading4">Fourth heading</h4>
+    <p>...</p>
+    <h4 id="scrollspyHeading5">Fifth heading</h4>
+    <p>...</p>
+  </div>
+
+    
 
 
-                    <div class="col-sm-4"><img src="assets/bca1.png" class="img-fluid" alt=""></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-          </div>
-          <div class="col">
-            <div style="margin: 8px; background: #4EA7D9;
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-            border-radius: 15px;" class="card">
-              <div class="card-body">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-sm-8">
-                      <h1>WallSplash</h1>
-                    </div>
-
-
-                    <div class="col-sm-4">
-                      <img src="assets/wall1.png" class="img-fluid" alt=""></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col">
-            <div style="margin: 8px; background: #FFFFFF;
-      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-      border-radius: 15px;" class="card">
-              <div class="card-body">
-                <div id="app1" class="container">
-                  <div class="row">
-                    <div class="col-sm-8">
-                      <h1>Just News</h1>
-                    </div>
-                    <div class="col-sm-4"><img src="assets/news1.png" class="img-fluid" alt=""></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div style="margin: 8px; background: #FFC700;
-      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-      border-radius: 15px;" class="card">
-              <div class="card-body">
-                <div id="app1" class="container">
-                  <div class="row">
-                    <div class="col-sm-8">
-                      <h1>Meme Templates</h1>
-                    </div>
-
-
-                    <div class="col-sm-4"><img src="assets/M1.png" class="img-fluid" alt="">
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+     
 
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" />
         <div class="d-flex">
@@ -232,38 +299,7 @@
        </div>
 
 
-       <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" />
-       <div class="d-flex">
-         <hr class="my-auto flex-grow-1">
-         <div class="px-5">
-           <h4>Websites</h4>
-         </div>
-         <hr class="my-auto flex-grow-1">
-       </div>
-
-
-       <div class="container">
-        <div class="row">
-          <div class="col-sm">
-            <div class="card bg-dark text-white">
-              <img class="card-img" src="assets/web1.png" alt="Card image">
-              <div class="card-img-overlay">
-                  <button type="button" class="btn btn-outline-primary">Take a look</button>
- 
-              </div>
-            </div>
-          </div>
-          <div class="col-sm">
-            <div class="card bg-dark text-white">
-              <img class="card-img" src="assets/web2.png" alt="Card image">
-              <div class="card-img-overlay">
-                  <button type="button" class="btn btn-outline-primary">Take a look</button>
-
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+       
 
       
 <h1>More about me</h1>
