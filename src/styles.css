@@ -126,3 +126,10 @@ ul.timeline > li:before {
   height: 20px;
   z-index: 400;
 }
+
+
+.blockquote{
+  margin-top:30px;
+  margin-bottom:30px;
+
+}
