@@ -133,3 +133,17 @@ ul.timeline > li:before {
   margin-bottom:30px;
 
 }
+
+
+.skill {
+  border: 2px solid black;
+  background-color: rgba(255, 255, 255, 0);
+  color: black;
+  padding:10px,10px;
+}
+
+#skills{
+  margin-top:30px;
+  margin-bottom:30px;
+
+}
