@@ -28,9 +28,15 @@
     integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
     </script>
  
+  <script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Art Space";
+  document.getElementById("artbg").style.backgroundImage="url(https://tse1.mm.bing.net/th/id/OIP.YGu5Cpg0RANd2LyjUPZkUAHaHa?pid=ImgDet&rs=1/img.jpg)";
+}
+</script>
 
   <nav id="navbar-example2" class="navbar navbar-light bg-light px-3">
-    <a class="navbar-brand" href="#">Portfolio</a>
+    <a onclick="myFunction()" id="demo" class="navbar-brand" href="#">Portfolio</a>
     <ul class="nav nav-pills">
       <li class="nav-item">
         <a class="nav-link" href="#scrollspyHeading1">About</a>
@@ -55,7 +61,7 @@
   </nav>
   <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
     <h3 id="scrollspyHeading1"></h3>
-    <div class="p-5 mb-4 bg-light rounded-3">
+    <div id="artbg" class="p-5 mb-4 bg-light rounded-3">
       <div class="container-fluid py-5">
         <div class="container">
           <div class="row">
