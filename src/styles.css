@@ -2,6 +2,15 @@ body {
   font-family: sans-serif;
 }
 
+#profilepic {
+  filter: drop-shadow(5px 5px 5px #222);
+}
+#Abandonedclass {
+  display: none;
+}
+#resumewin {
+  display: none;
+}
 .d-flex {
   margin-top: 50px;
   margin-bottom: 50px;
@@ -86,7 +95,6 @@ hr {
   width: max-content;
 }
 
-
 #linkedin svg {
   fill: #0e76a8;
 }
@@ -95,13 +103,12 @@ hr {
   fill: #333;
 }
 
-
 ul.timeline {
   list-style-type: none;
   position: relative;
 }
 ul.timeline:before {
-  content: ' ';
+  content: " ";
   background: #d4d9df;
   display: inline-block;
   position: absolute;
@@ -115,7 +122,7 @@ ul.timeline > li {
   padding-left: 20px;
 }
 ul.timeline > li:before {
-  content: ' ';
+  content: " ";
   background: white;
   display: inline-block;
   position: absolute;
@@ -127,37 +134,22 @@ ul.timeline > li:before {
   z-index: 400;
 }
 
-
-.blockquote{
-  margin-top:30px;
-  margin-bottom:30px;
-
+.blockquote {
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
-
 
 .skill {
   border: 2px solid black;
   background-color: rgba(255, 255, 255, 0);
   color: black;
-  padding:10px,10px;
+  padding: 10px, 10px;
 }
 
-#skills{
-  margin-top:30px;
-  margin-bottom:30px;
-
+#skills {
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 img {
   border: solid 2px;
@@ -177,7 +169,8 @@ img {
   border-radius: 2px;
   border-right-color: #eee;
   border-top-color: #ddd;
-  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25) inset, 0 5px 10px 5px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25) inset,
+    0 5px 10px 5px rgba(0, 0, 0, 0.25);
   box-sizing: border-box;
   display: inline-block;
   margin: 10vh 10vw;
