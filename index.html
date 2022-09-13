@@ -9,7 +9,7 @@
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
   <title>Naresh varma's Portfolio</title>
 </head>
@@ -28,15 +28,9 @@
     integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
     </script>
  
-  <script>
-function myFunction() {
-  document.getElementById("demo").innerHTML = "Art Space";
-  document.getElementById("artbg").style.backgroundImage="url(https://tse1.mm.bing.net/th/id/OIP.YGu5Cpg0RANd2LyjUPZkUAHaHa?pid=ImgDet&rs=1/img.jpg)";
-}
-</script>
 
   <nav id="navbar-example2" class="navbar navbar-light bg-light px-3">
-    <a onclick="myFunction()" id="demo" class="navbar-brand" href="#">Portfolio</a>
+    <a class="navbar-brand" href="#">Portfolio</a>
     <ul class="nav nav-pills">
       <li class="nav-item">
         <a class="nav-link" href="#scrollspyHeading1">About</a>
@@ -61,7 +55,7 @@ function myFunction() {
   </nav>
   <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
     <h3 id="scrollspyHeading1"></h3>
-    <div id="artbg" class="p-5 mb-4 bg-light rounded-3">
+    <div class="p-5 mb-4 bg-light rounded-3">
       <div class="container-fluid py-5">
         <div class="container">
           <div class="row">
@@ -69,20 +63,20 @@ function myFunction() {
                     <h1 class="display-3 fw-bold">Naresh Varma</h1>
                     
             
-              <p class="blockquote"">I am an Indie Dev. I make Apps,Games and Websites</p>
+              <p class="blockquote"">I am an Indie Dev. I make Apps, Games, Websites and Lame jokes</p>
             
 
                 <div class='social-links'>
-                  <div class='social-btn flex-center' id="twitter">
+                  <div class='social-btn flex-center' id="gmailicon">
                     <img src="assets/gmailicon.svg" width="24" height="24" viewBox="0 0 24 24">
-                    <span>ppsnvarma@gmail.com</span>
+                    <span id="emailid">ppsnvarma@gmail.com</span>
                   </div>
 
                   <div class='social-btn flex-center' id="linkedin">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                       <path
                         d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
-                      </svg><span>in/Naresh Varma</span>
+                      </svg><span id="linkedinid">in/Naresh Varma</span>
                   </div>
 
                   <div class='social-btn flex-center' id="github">
@@ -101,7 +95,7 @@ function myFunction() {
                 
             </div>
             <div class="col">
-              <img src="assets/Adobe_20220909_183418.png" class="img-fluid"
+              <img id="profilepic"src="https://demon-stare.github.io/Portfolio2/assets/Adobe_20220909_183418.png" class="img-fluid"
                 alt="">
             </div>
           </div>
@@ -112,6 +106,14 @@ function myFunction() {
 
     <h3 id="scrollspyHeading2"></h3>
 
+    <figure class="text-center">
+      <blockquote class="blockquote">
+        <p>“I hear and I forget. I see and I remember. I do and I understand.”</p>
+      </blockquote>
+      <figcaption class="blockquote-footer">
+        Someone famous
+      </figcaption>
+    </figure>
 
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" />
     <div class="d-flex">
@@ -218,23 +220,13 @@ function myFunction() {
         </div>
       </div>
     </div>
-
-
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" />
-    <div class="d-flex">
-      <hr class="my-auto flex-grow-1">
-      <div class="px-5">
-        <h3>Abandoned</h3>
-      </div>
-      <hr class="my-auto flex-grow-1">
-    </div>
-
-
-
+        <center><button type="button" id="toggleabandoned" class="btn btn-outline-primary">See more</button></center>
+     
 
 
 
     <div class="container">
+      <div id="Abandonedclass">
       <div class="row">
         <div class="col">
           <div style="margin: 8px; background: #FFFF;
@@ -313,6 +305,7 @@ function myFunction() {
           </div>
         </div>
       </div>
+      </div>
 
       <h3 id="scrollspyHeading3"></h3>
 
@@ -379,9 +372,13 @@ function myFunction() {
     </div>
 
 
+   <center> <button id="viewresume" type="button" class="btn btn-primary">View Resume &nbsp;</button>
+    
+    <button type="button" id="downloadresume"class="btn btn-primary">  &nbsp; Downlod Resume</button>
+   <br></br>
+  </center>
 
-
-    <div class="p-5 mb-4 bg-light rounded-3">
+    <div id="resumewin" class="p-5 mb-4 bg-light rounded-3">
       <div class="container-fluid py-5">
         <div class="container">
           <div class="row no-gutters">
@@ -453,7 +450,8 @@ function myFunction() {
         </div>
       </div>
     </div>
-  </div>
+ 
+</div>
     
   <figure class="text-center">
 
@@ -463,6 +461,19 @@ function myFunction() {
     </div>
 
   </figure>
+
+
+  <div class="btn-group btn-group-toggle" data-toggle="buttons">
+      <label class="btn btn-secondary active">
+        <input type="radio" name="options" id="option1" autocomplete="off" checked> Active
+      </label>
+      <label class="btn btn-secondary">
+        <input type="radio" name="options" id="option2" autocomplete="off"> Radio
+      </label>
+      <label class="btn btn-secondary">
+        <input type="radio" name="options" id="option3" autocomplete="off"> Radio
+      </label>
+    </div>
  
 </body>
 
