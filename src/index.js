@@ -1,4 +1,3 @@
-import "./styles.css";
 
 document.getElementById("linkedinid").addEventListener("click", openLinkedin);
 document.getElementById("viewresume").addEventListener("click", viewresume);
