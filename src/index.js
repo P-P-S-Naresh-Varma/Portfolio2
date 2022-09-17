@@ -1,4 +1,3 @@
-
 document.getElementById("linkedinid").addEventListener("click", openLinkedin);
 document.getElementById("viewresume").addEventListener("click", viewresume);
 
@@ -12,10 +11,12 @@ function toggleabandonedfun() {
   if (ishidden1) {
     document.getElementById("Abandonedclass").style.display = "block";
     console.log("clicked 1");
+    document.getElementById("toggleabandoned").innerHTML = "Hide unreleased";
     ishidden1 = false;
   } else {
     document.getElementById("Abandonedclass").style.display = "none";
     ishidden1 = true;
+    document.getElementById("toggleabandoned").innerHTML = "View more";
     console.log("clicked 2");
   }
 }
