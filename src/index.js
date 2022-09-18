@@ -1,5 +1,10 @@
 document.getElementById("linkedinid").addEventListener("click", openLinkedin);
 document.getElementById("viewresume").addEventListener("click", viewresume);
+document.getElementById("Arttoggle").addEventListener("click", activateline);
+
+function activateline() {
+  document.getElementById("svglineanim").style.background = "none";
+}
 
 document.getElementById("emailid").addEventListener("click", sendEmail);
 document

@@ -120,6 +120,12 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 })({"src/index.js":[function(require,module,exports) {
 document.getElementById("linkedinid").addEventListener("click", openLinkedin);
 document.getElementById("viewresume").addEventListener("click", viewresume);
+document.getElementById("Arttoggle").addEventListener("click", activateline);
+
+function activateline() {
+  document.getElementById("svglineanim").style.background = "none";
+}
+
 document.getElementById("emailid").addEventListener("click", sendEmail);
 document.getElementById("toggleabandoned").addEventListener("click", toggleabandonedfun);
 var ishidden1 = true;
@@ -186,7 +192,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "37939" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "38689" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
